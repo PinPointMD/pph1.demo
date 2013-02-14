@@ -29,7 +29,7 @@ h4 {color:#000;}
           </ul>
         <h4><strong>Population</strong></h4>
         <ul>
-          <li><a href="../populations/manage.php">Manage Population</a></li>
+          <li><a href="../populations/manage_populations.php">Manage Population</a></li>
           <li><a href="../populations/define_population.php">Define Poulation</a></li>
         </ul>
         <h4><strong>Engagement</strong></h4>

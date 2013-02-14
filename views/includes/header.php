@@ -25,8 +25,8 @@
       <ul>
         <li><a href="/home">Home</a></li>
         <li><a href="/lab_orders">Lab Orders</a></li>
-        <li><a href="/engagement" class="Navon">Patient Engagement</a></li>
-        <li><a href="/manage_patients">Manage Patients</a></li>
+        <li><a href="../engagement/coordinator.php" class="Navon">Patient Engagement</a></li>
+        <li><a href="../patients/manage_patients.php">Manage Patients</a></li>
       </ul>
     </div>
     <div class="pp-header-right">
@@ -43,14 +43,14 @@
   </div>
   <div class="row">
     <dl id="pph_patient_engagement" class="tabs">
-      <dd class="active"><a href="#simple1">Overview</a></dd>
-      <dd><a href="#simple2">Manage Population</a></dd>
-      <dd><a href="#simple3">Add New +</a></dd>
+      <dd class="active"><a href="../engagement/coordinator.php">Overview</a></dd>
+      <dd><a href="../populations/manage_populations.php">Manage Population</a></dd>
+      <dd><a href="../surveys/add_box.php">Add New +</a></dd>
     </dl>
     <dl id="pph_manage_patients" class="tabs" style="display:none">
-      <dd class="active"><a href="#">Tab1</a></dd>
-      <dd><a href="#">Tab2/a></dd>
-      <dd><a href="#">Tab3</a></dd>
+      <dd class="active"><a href="../patients/manage_patients.php">Tab1</a></dd>
+      <dd><a href="../patients/add_patient.php">Tab2/a></dd>
+      <dd><a href="../patients/patient_summary">Tab3</a></dd>
     </dl>
   </div>
 </header>
