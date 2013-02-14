@@ -41,9 +41,21 @@ h4 {color:#000;}
         <h4><strong>Library</strong></h4>
         <ul>
           <li><a href="../surveys/add_box.php">Add Box</a></li>
-          <li>Predefined Survey</li>
-          <li>Predefined Templates</li>
-        </ul>
+          <li>Predefined Surveys
+            <ul>
+              <li>Simple</li>
+              <li>Medium</li>
+              <li>Complex</li>
+            </ul>
+          </li>
+          <li>Predefined Templates
+            <ul>
+              <li>Simple</li>
+              <li>Medium</li>
+              <li>Complex</li>
+            </ul>
+          </li>
+          </ul>
         <h4><strong>Create a Survey</strong></h4>
         <ul>
           <li><a href="../surveys/create1.php">Create Survey 1</a></li>
@@ -104,94 +116,98 @@ h4 {color:#000;}
       </div>
     </td>
     <td width="25%" valign="top"><div class="role">
-      <h2>3. Nurse/Medical Assistant</h2>
+      <blockquote>
+        <h2>3. Nurse/Medical Assistant</h2>
         <p><img src="../../images/profiles/nurse.png"></p>
         <p>Provides clinical follow-up with patients</p>
         <h4><strong>General</strong></h4>
         <ul>
-        <li><a href="../engagement/nurse.php">Overview</a></li>
-        <li><a href="../engagement/call_queue.php">Call Queue</a></li>
-        <li><a href="../engagement/call_info.php">Call Info</a></li>
-        <li>Notifications</li>
+          <li><a href="../engagement/nurse.php">Overview</a></li>
+          <li><a href="../engagement/call_queue.php">Call Queue</a></li>
+          <li><a href="../engagement/call_info.php">Call Info</a></li>
+          <li>Notifications</li>
         </ul>
         <h4>Patient</h4>
         <ul>
           <li>Patient Summary</li>
           <li>Patient Profile</li>
-          </ul>
+        </ul>
         <h4>Settings</h4>
         <ul>
           <li><a href="../settings/inbox.php">Inbox</a></li>
           <li><a href="../settings/notifications.php">Notifications</a></li>
           <li><a href="../settings/my_account.php">My Account Settings </a></li>
         </ul>
-    </div>
+      </blockquote>
+        </div>
       <div class="role">
-        <h2>4. Phyician</h2>
-        <p><img src="../../images/profiles/physician.png" alt="physician"></p>
-        <p>The patient’s physician</p>
-        <h4><strong>Patient Interaction</strong></h4>
-        <ul>
-          <li><a href="../engagement/physician.php">Overview</a></li>
-          <li>View Surveys</li>
-          <li>Survey Overview</li>
-          <li>Patient Summary</li>
-          <li>Patient Medical History</li>
-        </ul>
-        <h4><strong>Mobile</strong></h4>
-        <ul>
-          <li><a href="../../mobile/login.php">Login</a></li>
-          <li><a href="../../mobile/physician.php">Dash</a></li>
-          <li><a href="../../mobile/survey.php">Survey</a></li>
-          <li>Survey Profile</li>
-          <li>Patient Profile</li>
-          <li>Patient Medical History</li>
-          <li>Notification</li>
-          <li>Message</li>
-        </ul>
-        <h4>Settings</h4>
-        <ul>
-          <li><a href="../settings/inbox.php">Inbox</a></li>
-          <li><a href="../settings/notifications.php">Notifications</a></li>
-          <li><a href="../settings/my_account.php">My Account Settings </a></li>
-        </ul>
-        <h4>Other</h4>
-        <ul>
-          <li><a href="../patients/manage_patients.php">Manage Patients</a>
-<ul>
-  <li><a href="../patients/add_patient.php">CRUD Patient</a></li>
+        <blockquote>
+          <h2>4. Phyician</h2>
+          <p><img src="../../images/profiles/physician.png" alt="physician"></p>
+          <p>The patient’s physician</p>
+          <h4><strong>Patient Interaction</strong></h4>
+          <ul>
+            <li><a href="../engagement/physician.php">Overview</a></li>
+            <li>View Surveys</li>
+            <li>Survey Overview</li>
+            <li>Patient Summary</li>
+            <li>Patient Medical History</li>
           </ul>
-          </li>
-          <li>Send Patient Message
-            <ul>
-              <li>Print/Reprint Requisition<br>
-              </li>
-              <li>Download Requisition as PDF<br>
-              </li>
-            </ul>
-          </li>
-          <li>Copy/Manage Reason Hierarchy<br>
-          </li>
-          <li>RU Office Info<br>
-          </li>
-          <li>RU Contact Info<br>
-          </li>
-          <li>Review Results<br>
-            <ul>
-              <li>Add Result Notes (text)</li>
-              <li>Add Result Notes (audio/transcribed)</li>
-              <li>Sign off on Results</li>
-            </ul>
-          </li>
-          <li>Review Results as Patient</li>
-          <li>Search for Requisition</li>
-          <li>Search for Patient</li>
-          <li>Manage Labs</li>
-          <li>Manage Test Menus</li>
-        </ul>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-      </div>
+          <h4><strong>Mobile</strong></h4>
+          <ul>
+            <li><a href="../../mobile/login.php">Login</a></li>
+            <li><a href="../../mobile/physician.php">Dash</a></li>
+            <li><a href="../../mobile/survey.php">Survey</a></li>
+            <li>Survey Profile</li>
+            <li>Patient Profile</li>
+            <li>Patient Medical History</li>
+            <li>Notification</li>
+            <li>Message</li>
+          </ul>
+          <h4>Settings</h4>
+          <ul>
+            <li><a href="../settings/inbox.php">Inbox</a></li>
+            <li><a href="../settings/notifications.php">Notifications</a></li>
+            <li><a href="../settings/my_account.php">My Account Settings </a></li>
+          </ul>
+          <h4>Other</h4>
+          <ul>
+            <li><a href="../patients/manage_patients.php">Manage Patients</a>
+              <ul>
+                <li><a href="../patients/add_patient.php">CRUD Patient</a></li>
+              </ul>
+            </li>
+            <li>Send Patient Message
+              <ul>
+                <li>Print/Reprint Requisition<br>
+                </li>
+                <li>Download Requisition as PDF<br>
+                </li>
+              </ul>
+            </li>
+            <li>Copy/Manage Reason Hierarchy<br>
+            </li>
+            <li>RU Office Info<br>
+            </li>
+            <li>RU Contact Info<br>
+            </li>
+            <li>Review Results<br>
+              <ul>
+                <li>Add Result Notes (text)</li>
+                <li>Add Result Notes (audio/transcribed)</li>
+                <li>Sign off on Results</li>
+              </ul>
+            </li>
+            <li>Review Results as Patient</li>
+            <li>Search for Requisition</li>
+            <li>Search for Patient</li>
+            <li>Manage Labs</li>
+            <li>Manage Test Menus</li>
+          </ul>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </blockquote>
+        </div>
     </td>
     <td width="25%" valign="top">
     	<div class="role">	
