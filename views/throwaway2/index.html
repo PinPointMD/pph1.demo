@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>TZAM Diagnostics - Receiving</title>
+  
+  <!-- Included CSS Files (Uncompressed)
+  <link rel="stylesheet" href="../stylesheets/foundation.css"> -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="../../stylesheets/foundation.css">
+  <link rel="stylesheet" href="../../stylesheets/app.css">
+
+  <!-- JS Compressed
+  <script src="../javascripts/modernizr.foundation.js"></script> -->
+  
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="topNav">
+
+	<!-- Header / Left Side -->
+	<div class="headerLeft">
+	
+		<!-- Logo -->
+		<div class="logo">
+		<a href="/"><img src="../../images/origin/pinpointhealth_logo.png" alt="Home Page" border="0" /></a>
+		</div>
+	
+	<!-- Navigation Buttons -->
+	<ul>
+	<li><a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Receiving" class="Navon">Receiving</a></li>
+	<li><a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Accessioning">Accessioning</a></li>
+	<li><a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Orders">Orders</a></li>
+	<li><a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Processing">Processing</a></li>
+	<li><a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Results">Results</a></li>
+	<li><a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Reports">Reports</a></li>
+	<li><a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Billing">Billing</a></li>
+	</ul>
+	<!-- //Navigation Buttons -->
+	</div>
+	<!-- //Header / Left Side -->
+	
+	<!-- Header / Right Side -->
+	<div class="headerRight">
+	
+		<!-- User Menu -->
+		<div class="userMenu">
+		
+			<!-- User Information -->
+			<div class="user">
+			TZAM<br />
+			Sam Zhang
+			</div>
+			
+			<!-- User Settings -->
+			<div class="settings">
+			<a href="/"></a>
+			</div>
+		
+		</div>
+		<!-- //User Menu -->
+	
+	<!-- Admin Button -->
+	<ul>
+	<li><a href="/Admin/" class="adminNav">Admin</a></li>
+	</ul>
+	<!-- //Admin Button -->
+	
+	</div>
+	<!-- //Header / Right Side -->
+
+</div>
+<!-- //HEADER -->
+
+
+
+  <div class="row" id="toprow">
+    <div class="twelve columns" id="topContent">
+      <h1>Incoming Specimen Packages</h1>
+      <p>To see specific shipment details, use the search / filter options by clicking the magnifying glass to the right.</p>
+      
+      	<!-- Icons -->
+      	<div class="icons">
+      	<img src="../../images/origin/search.png" alt="Search" id="search" /><span class="grep">|</span><a href="index.html" id="help"><img src="../../images/origin/help.png" alt="Need Help?" /></a>
+      	</div>
+      	<!-- //Icons -->
+      	
+    </div>
+  </div>
+  
+  <!-- Search -->
+  <div class="row">
+	  <div id="searchblock">
+		  
+		  <form action="javascript:void(0)" method="post">
+		  
+		  <div class="searchlabel"><strong>Tracking Number</strong></div> &nbsp; <input name="tracking" type="text" size="30" placeholder="Type or scan shipping info" class="tracking" /> &nbsp; 
+		  
+		  <select name="carrier" class="my-skinned-select">
+		  <option value="None" class="arrow">Select Carrier</option>
+		  <option value="FedEx">FedEx</option>
+		  <option value="UPS">UPS</option>
+		  <option value="USPS">USPS</option>
+		  </select>
+		  
+		  <br clear="all" />
+		  
+		  <p>
+		  <div class="searchlabel">Dates from</div> &nbsp; <input id="datepicker-example1" type="text" placeholder="&infin;"> &nbsp; to &nbsp; <input id="datepicker-example2" type="text"> &nbsp; <input type="checkbox" name="incoming" checked="true"> Incoming &nbsp; <input type="checkbox" name="received"> Received
+		  </p>
+		  
+		  	<div class="submitclear">
+		  	<a href="#" class="button">Search</a> &nbsp; <a href="file:///Macintosh HD/Users/jhyun/Dropbox/PinpointMD/tzam/live/Receiving/clear form script" class="clear">Clear Search</a>
+		  	</div>
+		  	
+		  </form>
+		  
+		  <!-- Close -->
+		  <div id="searchclose"></div>
+		  
+		  <!-- Arrow -->
+		  <div id="topboxarrow"></div>
+	  </div>
+  </div>
+  <!-- //Search -->
+  
+  <div class="row">
+    
+    <!-- Receiving Table -->
+    <!-- Container -->
+    <div class="eleven columns" id="tableContents">
+    
+    	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="tableLayout" id="intro">
+    	 <tbody>
+    	 <tr class="top">
+    	  <td>
+    	  Tracking Number <img src="../../images/origin/sort-down.png" />
+    	  </td>
+    	  
+    	  <td>
+    	  Carrier <img src="../../images/origin/sort-down.png" />
+    	  </td>
+    	  
+    	  <td>
+    	  Shipped By <img src="../../images/origin/sort-down.png" />
+    	  </td>
+    	  
+    	  <td>
+    	  Expected Delivery Date <img src="../../images/origin/sort-down.png" />
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  Samples <img src="../../images/origin/sort-down.png" />
+    	  </td>
+    	  
+    	 <td class="orders">
+    	  Orders <img src="../../images/origin/sort-down.png" />
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 
+    	 <tr>
+    	  <td>
+    	  <a href="#" data-reveal-id="MarkAsShipped">z123456789</a>
+    	  </td>
+    	  
+    	  <td>
+    	  FedEx
+    	  </td>
+    	  
+    	  <td>
+    	  Dr. Adrian Peterson
+    	  </td>
+    	  
+    	  <td>
+    	  December 12, 2012
+    	  </td>
+    	  
+    	  <td class="samples">
+    	  2
+    	  </td>
+    	  
+    	  <td class="orders">
+    	  1
+    	  </td>
+    	 </tr>
+    	 </tbody>
+    	</table>
+    
+    </div>
+    <!-- //Receiving Table -->
+    
+  </div>
+
+  
+  
+  <!-- Mark as Shipped Modal -->
+  <div id="MarkAsShipped" class="reveal-modal">
+  	<div class="modalContent">
+    <h2>Mark as Shipped</h2>
+    <p>
+      Tracking Number  &nbsp; <input name="tracking" type="text" size="30" placeholder="Type or scan shipping info" class="tracking" /> &nbsp; <a href="#" class="small button">Submit</a>
+    </p>
+  	</div>
+  	
+    <a class="close-reveal-modal"><img src="../../images/origin/closemodal.png" alt="Close" border="0" /></a>
+  </div>
+  
+  
+  
+  <!-- Footer -->
+  
+  <!-- HR -->
+  <div class="row">
+  	<br clear="all" />
+  	<div class="footerHR"></div>
+  </div>
+  <!-- //HR -->
+  
+  <!-- Footer Contents -->
+  <div class="row">
+    <div class="twelve columns" id="footer">
+    
+      <div class="four columns" id="footerComp">
+      <img src="../../images/origin/tzamlogo.jpg" alt="TZAM Diagnostics" />
+      <p>
+      1824 Wilmette Ave.<br />
+      Wilmette, IL 60091<br />
+      Tel: <a href="tel:847-256-3238">847-256-3238</a><br />
+      <a href="tel:888-319-3238">1-888-319-3238</a><br />
+      Fax: 847-256-3239
+      </p>
+      </div>
+      
+      <div class="four columns" id="footerMenu">
+	      
+	      <div class="fMenuLeft">
+	      <h5>Services</h5>
+	      <a href="index.html">Receiving</a><br />
+	      <a href="index.html">Accessioning</a><br />
+	      <a href="index.html">Orders</a><br />
+	      <a href="index.html">Processing</a><br />
+	      <a href="index.html">Results</a><br />
+	      <a href="index.html">Reports</a><br />
+	      <a href="index.html">Billing</a><br />
+	      </div>
+	      
+	      <div class="fMenuRight">
+	      <h5>General</h5>
+	      <a href="index.html">Admin</a><br />
+	      <a href="index.html">Settings</a><br />
+	      <a href="index.html">Tour</a><br />
+	      <a href="index.html">Help</a><br />
+	      <a href="index.html">Contact</a><br />
+	      </div>
+      </div>
+      
+      <div class="four columns" id="footerCopy">
+      &copy; 2013 Pinpoint Health. All Rights Reserved.<br />
+      <a href="index.html">Terms</a> | <a href="index.html">Legal</a> | <a href="index.html">Privacy</a><br />
+      <a href="mailto: support@pinpointmd.com">support@pinpointmd.com</a><br />
+      <a href="tel:866-790-3207">866.790.3207</a>
+      <p>
+      <a href="http://www.pinpointmd.com" target="_blank"><img src="../../images/origin/poweredby.jpg" alt="Pinpoint Health" /></a>
+      </p>
+      </div>
+      
+      
+    </div>
+  </div>
+  <!-- //Footer Contents -->
+  
+  <div class="footerBottom">
+  <!-- Rounded Corners -->
+  </div>
+  <!-- //Footer -->
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <script src="../../jscripts/jquery.js"></script>
+  <script src="../../jscripts/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="../../jscripts/jquery.foundation.forms.js"></script>
+  <script src="../../jscripts/jquery.event.move.js"></script>
+  <script src="../../jscripts/jquery.event.swipe.js"></script>
+  <script src="../../jscripts/jquery.foundation.reveal.js"></script>
+  <script src="../../jscripts/jquery.foundation.orbit.js"></script>
+  <script src="../../jscripts/jquery.foundation.navigation.js"></script>
+  <script src="../../jscripts/jquery.foundation.buttons.js"></script>
+  <script src="../../jscripts/jquery.foundation.tabs.js"></script>
+  <script src="../../jscripts/jquery.foundation.tooltips.js"></script>
+  <script src="../../jscripts/jquery.foundation.accordion.js"></script>
+  <script src="../../jscripts/jquery.placeholder.js"></script>
+  <script src="../../jscripts/jquery.foundation.alerts.js"></script>
+  <script src="../../jscripts/jquery.foundation.topbar.js"></script>
+  <script src="../../jscripts/jquery.foundation.joyride.js"></script>
+  <script src="../../jscripts/jquery.foundation.clearing.js"></script>
+  <script src="../../jscripts/jquery.foundation.magellan.js"></script>
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="../../jscripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="../../jscripts/app.js"></script>
+  <script src="../../jscripts/zebra_datepicker.js"></script>
+  <script src="../../jscripts/functions.js"></script>
+  <script src="../../jscripts/skinned-select.js"></script>
+
+    
+<!-- Help -->
+<ol id="ReceivingHelp" style="display:none">
+
+	<!-- See the Shipments Enroute -->
+	<li data-id="intro" data-button="Next: Mark a Shipment as Received">
+	  <h2>Incoming Shipments</h2>
+	  <p>
+		  Here you can see the shipments that are coming in today. For more receiving option, click the magnifying glass icon.
+	  </p>
+	</li>
+	
+	<!-- Mark a Shipment as Received -->
+	<li data-id="mark" data-button="Next: Search for a Shipment">
+	  <h2>Mark a Shipment as Received</h2>
+	  <p>
+		  Click an shipment that appears in the table, a pop-up will appear, enter or scan the tracking number, and click the "Submit" button.
+	  </p>
+	</li>
+	
+	<!-- Search for a Shipment -->
+	<li data-id="search" data-button="That's it!">
+	  <h2>Search for a Shipment</h2>
+	  <p>To search for a specific shipment incoming, or from the past, click the magnifying glass icon. You will be presented with search option to help you find the shipment you are looking for.</p>
+	</li>
+</ol>
+
+<!-- Launch Script by clicking the help icon -->
+<script>
+	$('#help').on('click', function (e) {
+	    e.preventDefault();
+	    $('#ReceivingHelp').joyride();
+	  });
+</script>
+<!-- //Help -->
+
+<!-- Search Expand -->
+<script>
+$("#search").click(function(){
+  $("#searchblock").animate({
+    width: "900px",
+    height: "123px",
+    opacity: 1.0,
+  }, 
+  500 );
+});
+
+$("#searchclose").click(function(){
+  $("#searchblock").animate({
+    height: "0px",
+    opacity: 0,
+  }, 
+  500 );
+});
+</script>
+<!-- //Search -->
+
+<!-- Custom Select Box -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.my-skinned-select').skinnedSelect();
+  })
+</script>
+<!-- //Custom Select Box -->
+
+  
+</body>
+</html>
