@@ -42,10 +42,15 @@
     </div>
   </div>
   <div class="row">
-    <dl class="tabs">
-    <dd class="active"><a href="#simple1">Overview</a></dd>
-    <dd><a href="#simple2">Manage Population</a></dd>
-    <dd><a href="#simple3">Add New +</a></dd>
+    <dl id="pph_patient_engagement" class="tabs">
+      <dd class="active"><a href="#simple1">Overview</a></dd>
+      <dd><a href="#simple2">Manage Population</a></dd>
+      <dd><a href="#simple3">Add New +</a></dd>
+    </dl>
+    <dl id="pph_manage_patients" class="tabs" style="display:none">
+      <dd class="active"><a href="#">Tab1</a></dd>
+      <dd><a href="#">Tab2/a></dd>
+      <dd><a href="#">Tab3</a></dd>
     </dl>
   </div>
 </header>
