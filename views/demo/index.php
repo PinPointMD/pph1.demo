@@ -116,8 +116,7 @@ h4 {color:#000;}
       </div>
     </td>
     <td width="25%" valign="top"><div class="role">
-      <blockquote>
-        <h2>3. Nurse/Medical Assistant</h2>
+<h2>3. Nurse/Medical Assistant</h2>
         <p><img src="../../images/profiles/nurse.png"></p>
         <p>Provides clinical follow-up with patients</p>
         <h4><strong>General</strong></h4>
@@ -138,11 +137,9 @@ h4 {color:#000;}
           <li><a href="../settings/notifications.php">Notifications</a></li>
           <li><a href="../settings/my_account.php">My Account Settings </a></li>
         </ul>
-      </blockquote>
         </div>
       <div class="role">
-        <blockquote>
-          <h2>4. Phyician</h2>
+<h2>4. Phyician</h2>
           <p><img src="../../images/profiles/physician.png" alt="physician"></p>
           <p>The patient’s physician</p>
           <h4><strong>Patient Interaction</strong></h4>
@@ -206,7 +203,6 @@ h4 {color:#000;}
           </ul>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
-        </blockquote>
         </div>
     </td>
     <td width="25%" valign="top">
