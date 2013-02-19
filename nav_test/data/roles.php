@@ -15,56 +15,24 @@
                     'left' => array(
                         array(), // 0 index
                         array(
-                            'a_href' => 'page1.php',
+                            'a_href' => '../../pi_coordinator/home/',
                             'a_text' => 'Home',
                             'subnav' => array(
                                 array (), // 0 index
                                 array (
-                                    'a_href' => '../jh_test/page1.php',
-                                    'a_text' => 'Test 1',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page2.php',
-                                    'a_text' => 'Test 2',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page3.php',
-                                    'a_text' => 'Test 3',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page4.php',
-                                    'a_text' => 'Test 4',
-                                ),
-                                array (
-                                    'a_href' => '1',
-                                    'a_text' => '1',
+                                    'a_href' => '../../pi_coordinator/home/',
+                                    'a_text' => 'Home',
                                 ),
                             ),
                         ),
                         array(
-                            'a_href' => 'page2.php',
+                            'a_href' => '../../pi_coordinator/laborders/',
                             'a_text' => 'Lab Orders',
                             'subnav' => array(
                                 array (), // 0 index
                                 array (
-                                    'a_href' => '2',
-                                    'a_text' => '2',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page1a.php',
-                                    'a_text' => 'Test 1',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page2.php',
-                                    'a_text' => 'Test 2',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page3.php',
-                                    'a_text' => 'Test 3',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page4.php',
-                                    'a_text' => 'Test 4',
+                                    'a_href' => '../../pi_coordinator/laborders/',
+                                    'a_text' => 'LO Home',
                                 ),
                             ),
                         ),
@@ -78,63 +46,23 @@
                                     'a_text' => 'Overview',
                                 ),
                                 array (
-                                    'a_href' => '../populations/manage_populations.php',
+                                    'a_href' => '../../pi_coordinator/engagement/population.php',
                                     'a_text' => 'Manage Population',
                                 ),
                                 array (
-                                    'a_href' => '../surveys/add_box.php',
+                                    'a_href' => '../../pi_coordinator/engagement/addnew.php',
                                     'a_text' => 'Add New +',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page1.php',
-                                    'a_text' => 'Test 1',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page2.php',
-                                    'a_text' => 'Test 2',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page3.php',
-                                    'a_text' => 'Test 3',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page4.php',
-                                    'a_text' => 'Test 4',
                                 ),
                             ),
                         ),
                         array(
-                            'a_href' => 'page4.php',
+                            'a_href' => '../../pi_coordinator/managepatients/',
                             'a_text' => 'Manage Patients',
                             'subnav' => array(
                                 array (), // 0 index
                                 array (
-                                    'a_href' => '../patients/manage_patients.php',
-                                    'a_text' => 'Tab1',
-                                ),
-                                array (
-                                    'a_href' => '../patients/add_patient.php',
-                                    'a_text' => 'Tab2',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page1.php',
-                                    'a_text' => 'Test 1',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page2.php',
-                                    'a_text' => 'Test 2',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page3.php',
-                                    'a_text' => 'Test 3',
-                                ),
-                                array (
-                                    'a_href' => '../jh_test/page4.php',
-                                    'a_text' => 'Test 4',
-                                ),
-                                array (
-                                    'a_href' => '../patients/patient_summary',
-                                    'a_text' => 'Tab3',
+                                    'a_href' => '../../pi_coordinator/managepatients/',
+                                    'a_text' => 'MP Home',
                                 ),
                             )
                         ),
